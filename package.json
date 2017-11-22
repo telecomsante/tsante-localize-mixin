@@ -1,0 +1,29 @@
+{
+  "name": "tsante-localize-behavior",
+  "version": "1.0.0",
+  "description": "Overriding of app-localize-behavior to automatically retrieve the json locale files of a folder",
+  "scripts": {
+    "install": "bower install",
+    "start": "polymer serve --hostname 0.0.0.0 --port 8080",
+    "dev": "polymer serve --hostname 0.0.0.0 --port 8080 --open",
+    "clean": "git -c core.excludesfile=/dev/null clean -X -d -f"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.telecomsante.com:components/tsante-localize-behavior.git"
+  },
+  "keywords": [
+    "app-localize-behavior",
+    "polymer",
+    "behavior",
+    "localize",
+    "locale",
+    "language"
+  ],
+  "author": "bgoubin",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "polymer-cli": "^1.5.7"
+  }
+}

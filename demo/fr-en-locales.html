@@ -1,0 +1,33 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../tsante-localize-behavior.html">
+
+<dom-module id="fr-en-locales">
+  <template>
+    <style>
+      :host {
+        font-family: sans-serif;
+      }
+    </style>
+  
+    <h1>Unlocalized line</h1>
+    <h2>{{localize('first')}}</h2>
+    <h3>{{localize('second')}}</h3>
+    <button value="fr" on-tap="setLang">Français</button>
+    <button value="en" on-tap="setLang">English</button>
+  </template>
+
+  <script>
+    class FrEnLocales extends Polymer.mixinBehaviors([TSPolymerBehaviors.TsanteLocalizeBehavior], Polymer.Element) {
+      static get is() { return 'fr-en-locales' }
+      static get properties() {
+        return { language: { value: 'fr' } }
+      }
+      setLang(evt) {
+        const btn = evt.target
+        const value = btn.value
+        this.language = value
+      }
+    }
+    customElements.define(FrEnLocales.is, FrEnLocales)
+    </script>
+</dom-module>
