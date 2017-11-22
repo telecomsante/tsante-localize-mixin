@@ -1,1 +1,3 @@
-tsante-localize-behavior
+# tsante-localize-behavior
+
+A Polymer behavior that simplify localization
