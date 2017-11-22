@@ -1,0 +1,1 @@
+tsante-localize-behavior
