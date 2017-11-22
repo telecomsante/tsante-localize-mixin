@@ -21,5 +21,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.2.0",
+    "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0"
+  }
 }
