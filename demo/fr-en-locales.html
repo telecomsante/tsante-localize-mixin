@@ -12,14 +12,22 @@
     <h1>Unlocalized line</h1>
     <h2>{{localize('first')}}</h2>
     <h3>{{localize('second')}}</h3>
-    <button value="fr" on-tap="setLang">Français</button>
-    <button value="en" on-tap="setLang">English</button>
+    <button value="fr" on-tap="_setLang">Français</button>
+    <button value="en" on-tap="_setLang">English</button>
   </template>
 
   <script>
+    /**
+     * Demo class
+     * @extends TSPolymer
+     * @polymer
+     */
     class FrEnLocales extends TSPolymer.TsanteLocalizeMixin(Polymer.Element) {
       static get is() { return 'fr-en-locales' }
-      setLang(evt) {
+      /**
+       * Button reaction
+       */
+      _setLang(evt) {
         const btn = evt.target
         const value = btn.value
         this.language = value
