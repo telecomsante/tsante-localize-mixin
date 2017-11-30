@@ -1,7 +1,7 @@
 {
-  "name": "tsante-localize-behavior",
+  "name": "tsante-localize-mixin",
   "version": "1.0.0",
-  "description": "Overriding of app-localize-behavior to automatically retrieve the json locale files of a folder",
+  "description": "Mixin to simplify Polymer elements localization to automatically retrieve the json locale files of a folder",
   "scripts": {
     "install": "bower install",
     "start": "polymer serve --hostname 0.0.0.0 --port 8080",
@@ -10,12 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.telecomsante.com:components/tsante-localize-behavior.git"
+    "url": "git@git.telecomsante.com:components/tsante-localize-mixin.git"
   },
   "keywords": [
-    "app-localize-behavior",
     "polymer",
-    "behavior",
     "localize",
     "locale",
     "language"

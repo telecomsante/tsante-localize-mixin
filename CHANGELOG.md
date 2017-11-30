@@ -1,4 +1,4 @@
-# Changelog tsante-localize-behavior
+# Changelog tsante-localize-mixin
 
 ## Upcoming changes
 

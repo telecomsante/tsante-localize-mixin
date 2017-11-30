@@ -2,7 +2,7 @@
 <link rel="import" href="../app-localize-behavior/app-localize-behavior.html">
 <script>
 /**
-* `TSPolymerBehaviors.TsanteLocalizeBehavior` wraps the Polymer.AppLocalizeBehavior.
+* `TSPolymer.TsanteLocalizeMixin` wraps the Polymer.AppLocalizeBehavior.
 * It simplifies the loading of json locale resources.
 * In the folder of your create a folder 'lang' and add the json locale files in it : 
 * - lang/
@@ -51,6 +51,6 @@ const TsanteLocalizeBehaviorImpl = {
     this.resources = json
   }
 }
-window.TSPolymerBehaviors = window.TSPolymerBehaviors || {}
+window.TSPolymer = window.TSPolymer || {}
 window.TSPolymerBehaviors.TsanteLocalizeBehavior =  [ Polymer.AppLocalizeBehavior, TsanteLocalizeBehaviorImpl]
 </script>

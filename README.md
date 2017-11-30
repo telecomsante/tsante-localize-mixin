@@ -1,3 +1,3 @@
-# tsante-localize-behavior
+# tsante-localize-mixin
 
-A Polymer behavior that simplify localization
+A Polymer mixin that simplify localization

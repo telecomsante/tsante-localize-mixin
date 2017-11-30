@@ -1,5 +1,5 @@
 <link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="../tsante-localize-behavior.html">
+<link rel="import" href="../tsante-localize-mixin.html">
 
 <dom-module id="fr-en-locales">
   <template>
@@ -17,7 +17,7 @@
   </template>
 
   <script>
-    class FrEnLocales extends Polymer.mixinBehaviors([TSPolymerBehaviors.TsanteLocalizeBehavior], Polymer.Element) {
+    class FrEnLocales extends TSPolymer.TsanteLocalizeMixin {
       static get is() { return 'fr-en-locales' }
       static get properties() {
         return { language: { value: 'fr' } }
