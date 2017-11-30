@@ -1,7 +1,7 @@
 # Changelog tsante-localize-mixin
 
-## Upcoming changes
+## Version 2.0.0 (30-11-2017)
 * [FEA] [BGO] Converting behavior into a mixin
 
-## Version 1.0.0 (2017-11-22)
+## Version 1.0.0 (22-11-2017)
 * [FEA] [BGO] Basic feature
