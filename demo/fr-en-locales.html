@@ -17,11 +17,8 @@
   </template>
 
   <script>
-    class FrEnLocales extends TSPolymer.TsanteLocalizeMixin {
+    class FrEnLocales extends TSPolymer.TsanteLocalizeMixin(Polymer.Element) {
       static get is() { return 'fr-en-locales' }
-      static get properties() {
-        return { language: { value: 'fr' } }
-      }
       setLang(evt) {
         const btn = evt.target
         const value = btn.value
