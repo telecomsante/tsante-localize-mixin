@@ -9,27 +9,25 @@
 * - lang/fr.json
 * - lang/en.json
 * - lang/de.json
-* The behavior will automatically get those files according to its locale array content.
+* The mixin will automatically get those files according to its locale array content.
 * The default locales loaded are fr, en, de, it, es. If a file is not found no worries, it won't fail, but you may have a few error messages in the console.
 *     <dom-module id="x-app">
 *        <template>
 *         <div>{{localize('hello', 'name', 'Batman')}}</div>
 *        </template>
 *        <script>
-*           Polymer({
-*             is: "x-app",
-*             behaviors: [ TSPolymerBehaviors.TsanteLocalizeBehavior ],
-*             properties: {
-*               language: {
-*                 value: 'en'
-*               },
-*             }
-*           });
+*           class XApp extends TSPolymer.TsanteLocalizeMixin(Polymer.Element) {
+*              static get is() { return 'x-app' }
+*              static get properties() {
+*                 return { language: { value: 'fr' } }
+*              }
+*           }
 *        &lt;/script>
 *     </dom-module>
 *
-* @demo demo/index.html
-* @polymerBehavior Tsante.TsanteLocalizeBehavior
+* @polymer
+* @demo demo/index.html French and english localization
+* @mixinFunction TSPolymer.TsanteLocalizeMixin
 */
 const TsanteLocalizeMixin = superClass => {
   return class extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior], superClass) {
