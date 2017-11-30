@@ -1,16 +1,15 @@
 {
-  "name": "tsante-localize-behavior",
-  "description": "Overriding of app-localize-behavior to automatically retrieve the json locale files of a folder",
+  "name": "tsante-localize-mixin",
+  "description": "Mixin to simplify Polymer elements localization to automatically retrieve the json locale files of a folder",
   "authors": [
     "bgoubin"
   ],
   "license": "ISC",
   "keywords": [
-    "app-localize-behavior",
     "polymer",
-    "behavior",
     "localize",
     "locale",
+    "mixin",
     "language"
   ],
   "homepage": "",
@@ -25,5 +24,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^2.2.0",
     "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^3.0.1"
   }
 }

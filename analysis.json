@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0.0",
+  "elements": [
+    {
+      "description": "Demo class",
+      "summary": "",
+      "path": "demo/fr-en-locales.html",
+      "properties": [],
+      "methods": [
+        {
+          "name": "_setLang",
+          "description": "Button reaction",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 29,
+              "column": 6
+            },
+            "end": {
+              "line": 33,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "evt"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 24,
+          "column": 4
+        },
+        "end": {
+          "line": 34,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "TSPolymer",
+      "name": "FrEnLocales",
+      "attributes": [],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "fr-en-locales"
+    }
+  ],
+  "mixins": [
+    {
+      "description": "`TSPolymer.TsanteLocalizeMixin` wraps the Polymer.AppLocalizeBehavior.\nIt simplifies the loading of json locale resources.\nIn the folder of your create a folder 'lang' and add the json locale files in it : \n- lang/\n- lang/fr.json\n- lang/en.json\n- lang/de.json\nThe mixin will automatically get those files according to its locale array content.\nThe default locales loaded are fr, en, de, it, es. If a file is not found no worries, it won't fail, but you may have a few error messages in the console.\n    <dom-module id=\"x-app\">\n       <template>\n        <div>{{localize('hello', 'name', 'Batman')}}</div>\n       </template>\n       <script>\n          class XApp extends TSPolymer.TsanteLocalizeMixin(Polymer.Element) {\n             static get is() { return 'x-app' }\n             static get properties() {\n                return { language: { value: 'fr' } }\n             }\n          }\n       &lt;/script>\n    </dom-module>",
+      "summary": "",
+      "path": "tsante-localize-mixin.html",
+      "properties": [
+        {
+          "name": "locales",
+          "type": "Array",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 35,
+              "column": 8
+            },
+            "end": {
+              "line": 38,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "[\"fr\",\"en\",\"de\",\"es\",\"it\"]"
+        },
+        {
+          "name": "_folder",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 39,
+              "column": 8
+            },
+            "end": {
+              "line": 39,
+              "column": 48
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"lang\""
+        },
+        {
+          "name": "_extension",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 40,
+              "column": 8
+            },
+            "end": {
+              "line": 40,
+              "column": 51
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"json\""
+        },
+        {
+          "name": "_prefix",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 41,
+              "column": 8
+            },
+            "end": {
+              "line": 41,
+              "column": 44
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"\""
+        },
+        {
+          "name": "_suffix",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 42,
+              "column": 8
+            },
+            "end": {
+              "line": 42,
+              "column": 44
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "attached",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 45,
+              "column": 4
+            },
+            "end": {
+              "line": 53,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": []
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": "French and english localization"
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 31,
+          "column": 0
+        },
+        "end": {
+          "line": 55,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "name": "TsanteLocalizeMixin",
+      "attributes": [
+        {
+          "name": "locales",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 35,
+              "column": 8
+            },
+            "end": {
+              "line": 38,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "Array"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": []
+    }
+  ]
+}
