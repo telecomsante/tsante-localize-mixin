@@ -1,6 +1,6 @@
 {
   "name": "tsante-localize-mixin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Mixin to simplify Polymer elements localization to automatically retrieve the json locale files of a folder",
   "scripts": {
     "install": "bower install",
