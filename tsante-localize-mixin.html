@@ -43,14 +43,15 @@ const TsanteLocalizeMixin = superClass => {
         _suffix: { type: String, value: '' }
       }
     }
-    async attached(){
-      super.attached()
+    async connectedCallback(){
+      super.connectedCallback()
       const fetches = this.locales.map(locale => fetch(this.resolveUrl(`${this._folder}/${this._prefix}${locale}${this._suffix}.${this._extension}`)))
       const results = await Promise.all(fetches)
       const correct = results.filter(result => result.status === 200)
       const jsons = await Promise.all(correct.map(e => e.json()))
       const json = Object.assign({}, ...jsons)
       this.resources = json
+      this.fire('app-localize-resources-loaded', '', { bubbles: this.bubbleEvent});
     }
   }
 }
